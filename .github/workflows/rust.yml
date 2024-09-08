@@ -1,0 +1,29 @@
+name: Rust
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: "0 8 * * *"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Test all feature combinations
+      run: |
+        cargo test --all-features
+        cargo test --no-default-features
+        cargo test --features generator
+        cargo test --features explorer
+        cargo test --features runtime
+        cargo test --features "generator explorer"
+        cargo test --features "generator runtime"
+        cargo test --features "explorer runtime"

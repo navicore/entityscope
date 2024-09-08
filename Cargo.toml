@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "entity-scope-generator",
+    "entity-scope-explorer",
+    "entity-twin-runtime",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Ed Sweeney <ed@onextent.com>"]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+# Add other shared dependencies here

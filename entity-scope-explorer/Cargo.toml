@@ -1,0 +1,9 @@
+[package]
+name = "entity-scope-explorer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde.workspace = true
+# Add other dependencies specific to this crate

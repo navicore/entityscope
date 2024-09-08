@@ -1,0 +1,23 @@
+[package]
+name = "entityscope"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "A tool for exploring and generating entity data"
+license = "MIT"
+repository = "https://github.com/navicore/entityscope"
+
+[features]
+default = ["generator"]
+generator = ["dep:entity-scope-generator"]
+explorer = ["dep:entity-scope-explorer"]
+runtime = ["dep:entity-twin-runtime"]
+full = ["generator", "explorer", "runtime"]
+
+[dependencies]
+entity-scope-generator = { path = "../entity-scope-generator", optional = true }
+entity-scope-explorer = { path = "../entity-scope-explorer", optional = true }
+entity-twin-runtime = { path = "../entity-twin-runtime", optional = true }
+
+serde.workspace = true
+# Add other common dependencies here

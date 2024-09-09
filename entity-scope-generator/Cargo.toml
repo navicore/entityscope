@@ -4,6 +4,14 @@ version.workspace = true
 edition.workspace = true
 authors.workspace = true
 
+[[bin]]
+name = "entityscope"
+path = "src/main.rs"
+
+[lib]
+name = "entity_scope_generator"
+path = "src/lib.rs"
+
 [dependencies]
 serde.workspace = true
-# Add other dependencies specific to this crate
+clap = { version = "3.0", features = ["derive"] }

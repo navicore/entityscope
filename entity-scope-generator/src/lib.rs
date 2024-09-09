@@ -1,14 +1,12 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+// Library code goes here
+pub fn generate_rust(
+    package_name: &str,
+    file_path: &str,
+) -> Result<(), Box<dyn std::error::Error>> {
+    // Implementation
+    println!(
+        "Generating Rust code for package {} using file {}",
+        package_name, file_path
+    );
+    Ok(())
 }

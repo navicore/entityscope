@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/entityscope](https://git.navicore.tech/navicore/entityscope).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 # EntityScope
 
 # UNDER CONSTRUCTION
